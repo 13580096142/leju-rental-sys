@@ -1,0 +1,30 @@
+# 配置端口号与项目访问目录
+server:
+  port: 8889
+  servlet:
+    context-path: leju
+# 配置mysql数据源
+#spring:
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/dbmyhouse?useUnicode=true&characterEncoding=utf8
+#    data-username: root
+#    data-password: 065864
+#    # druid连接池
+#    type: com.alibaba.druid.pool.DruidDataSource
+#    druid:
+#      initial-size: 10
+#      max-active: 100
+#      max-wait: 60000
+#      min-evictable-idle-time-millis: 30000
+#      max-evictable-idle-time-millis: 60000
+#  # 开发环境
+#  profiles:
+#    active:dev
+
+# 配置mybatis
+mybatis:
+  # mapper扫描位置
+  config-location: classpath:mapper/*/*.xml
+  # 实体类别名扫描位置
+  type-aliases-package: cn.poison.leju.sys.model
